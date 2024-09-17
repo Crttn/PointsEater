@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Auto Claimer de Puntos",
+    "name": "Points Eater",
     "version": "1.0",
-    "description": "Reclama automáticamente los puntos del canal mientras ves un directo.",
+    "description": "A simple extension to automatically claim points from a twitch channel.",
     "permissions": ["activeTab", "scripting", "storage"],
     "action": {
       "default_popup": "popup.html",

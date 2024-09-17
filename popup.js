@@ -1,32 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Referencia a los elementos del DOM
+    // Reference to DOM elements
     const toggleAutoClaim = document.getElementById('toggle-auto-claim');
     const claimNowButton = document.getElementById('claim-now-button');
 
-    // Cargar el estado del checkbox al abrir el popup
+    // Load checkbox state when popup opens
     chrome.storage.local.get(['autoClaimEnabled'], function (result) {
         toggleAutoClaim.checked = result.autoClaimEnabled || false;
     });
 
-    // Manejar el cambio de estado del checkbox
+    // Handling checkbox state change
     toggleAutoClaim.addEventListener('change', function () {
         const isAutoClaimEnabled = toggleAutoClaim.checked;
 
-        // Guardar el estado del checkbox en el almacenamiento local de Chrome
+        // Save checkbox state to the Chrome local storage
         chrome.storage.local.set({ autoClaimEnabled: isAutoClaimEnabled }, function () {
-            console.log('El estado de auto-claim ha sido actualizado:', isAutoClaimEnabled);
+            console.log('The auto-claim status has been updated:', isAutoClaimEnabled);
         });
 
-        // Enviar un mensaje al content script para actualizar el estado
+        // Send a message to the content script to update the status
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             chrome.tabs.sendMessage(tabs[0].id, { action: "toggleAutoClaim", enabled: isAutoClaimEnabled });
-        });
-    });
-
-    // Manejar el evento de clic en el botón "Reclamar puntos ahora"
-    claimNowButton.addEventListener('click', function () {
-        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-            chrome.tabs.sendMessage(tabs[0].id, { action: "claimPoints" });
         });
     });
 });
