@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Claimer de Puntos",
+    "version": "1.0",
+    "description": "Reclama automáticamente los puntos del canal mientras ves un directo.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/moneyPouch_16.png",
+        "48": "/images/moneyPouch_48.png",
+        "128": "/images/moneyPouch_128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.twitch.tv/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+        "16": "/images/moneyPouch_16.png",
+        "48": "/images/moneyPouch_48.png",
+        "128": "/images/moneyPouch_128.png"
+    }
+  }
+  
