@@ -8,4 +8,4 @@ If you want to get points from several channels at the same time, you need to ha
 
 ---
 
-<img src="file:///C:/Users/crttn/Desktop/PoitnsEater.png" title="" alt="PoitnsEater.png" data-align="center">
+<img title="as" src="https://i.ibb.co/fHqTXL1/Poitns-Eater.png" alt="Points Eater" data-align="center" width="306">
