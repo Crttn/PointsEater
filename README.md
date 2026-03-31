@@ -1,10 +1,10 @@
 # POINTS EATER
 
-A browser extension that automatically claims points from one or more Twith channels.
+A browser extension that automatically claims points from one or more Twitch channels.
 
-To use the extension, simply click on the "Activate" button.
+To use the extension, simply click the "Activate" button.
 
-If you want to get points from several channels at the same time, you need to have the sales with the respective streams open and the extension active on both.
+If you want to collect points from several channels at the same time, you must have the tabs with the respective streams open and the extension active on all of them.
 
 ---
 
