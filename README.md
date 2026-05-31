@@ -25,3 +25,20 @@ Para instalar y utilizar la extensión en navegadores basados en Chromium (Googl
 1. **Descarga el código:** Clona este repositorio en tu equipo o descarga el archivo `.zip` desde el botón verde "Code" y extráelo.
    ```bash
    git clone [https://github.com/Crttn/PointsEater.git](https://github.com/Crttn/PointsEater.git)
+
+2. **Accede a las extensiones:** Abre tu navegador y dirígete a la página de gestión de extensiones (puedes escribir `chrome://extensions/` en la barra de direcciones).
+3. **Activa el Modo Desarrollador:** Enciende el interruptor de "Modo de desarrollador" que suele encontrarse en la esquina superior derecha.
+4. **Carga la extensión:** Haz clic en el botón **"Cargar descomprimida"** (*Load unpacked*) y selecciona la carpeta que contiene los archivos que acabas de descargar.
+
+## 🕹️ Uso
+
+- Fija el icono de **Points Eater** en la barra de tareas de tu navegador para tener un acceso rápido.
+- Abre uno o más directos en Twitch donde desees recolectar puntos.
+- Haz clic en el icono de la extensión y presiona el botón **"Activar"**.
+- ¡Listo! Puedes dejar la pestaña abierta (incluso de fondo) y la extensión se encargará del resto.
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
